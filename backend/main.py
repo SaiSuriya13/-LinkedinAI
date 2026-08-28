@@ -36,7 +36,7 @@ class GenerateRequest(BaseModel):
 # Health check
 # ---------------------------------------------------------
 
-@app.get("/")
+@app.get("/api")
 def root():
     return {
         "message": "LinkedAI API is running"
@@ -47,7 +47,7 @@ def root():
 # Generate LinkedIn posts
 # ---------------------------------------------------------
 
-@app.post("/generate")
+@app.post("/api/generate")
 def generate(request: GenerateRequest):
 
     # Step 1: Classify the original post

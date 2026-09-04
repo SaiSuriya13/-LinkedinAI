@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from backend.ml import classify_post
-from backend.ai import generate_posts
+from ml import classify_post
+from ai import generate_posts
 
 # ---------------------------------------------------------
 # FastAPI application
